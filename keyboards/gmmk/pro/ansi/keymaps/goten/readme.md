@@ -1,5 +1,5 @@
 Extras:
-* Rotary know works
+* Rotary knob now works
 * Lights turn off after 5mins of inactivity
 * Lights turn off when suspended
 
