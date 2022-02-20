@@ -125,7 +125,3 @@
 
 /* Force NKRO on boot up regardless of the setting saved in the EEPROM (uncomment to enable it) */
 // #define FORCE_NKRO
-
-#define RGBLIGHT_SLEEP
-#define RGB_DISABLE_WHEN_USB_SUSPENDED
-#define RGB_DISABLE_TIMEOUT 300000
