@@ -17,13 +17,19 @@ Two layers, defined in `keyboards/haverworks/theseus75/keymaps/goten/keymap.c`.
 - **Layer 0** — base, normal typing.
 - **Layer 1** — momentary, active only while the **left thumb's 2.25u key** (leftmost of the three middle keys, labeled "Space" in the board JSON) is held down. This is `MO(1)` at matrix position `[5,4]`.
 
-Layer 1 overlays only three keys — everything else is transparent (falls through to layer 0):
+Layer 1 overlays a handful of keys — everything else is transparent (falls through to layer 0):
 
-| Physical key          | Layer 0 | Layer 1 (MO held) |
-| --------------------- | ------- | ----------------- |
-| Top-right corner      | Del     | PrtSc             |
-| Backspace             | Bksp    | Del               |
-| Right encoder press   | Mute    | Play/Pause        |
+| Physical key          | Layer 0 | Layer 1 (MO held)    |
+| --------------------- | ------- | -------------------- |
+| Top-right corner      | Del     | PrtSc                |
+| Backspace             | Bksp    | Del                  |
+| Right encoder press   | Mute    | Play/Pause           |
+| `1`                   | 1       | RGB toggle           |
+| `Q` / `A`             | Q / A   | Brightness up / down |
+| `W` / `S`             | W / S   | Saturation up / down |
+| `E` / `D`             | E / D   | Hue up / down        |
+| `R` / `F`             | R / F   | RGB mode next / prev |
+| `T` / `G`             | T / G   | RGB speed up / down  |
 
 # Encoders
 
