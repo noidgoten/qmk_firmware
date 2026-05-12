@@ -4,7 +4,25 @@ make haverworks/theseus75:goten
 
 # Flash
 
-make haverworks/theseus75:goten:flash
+Split keyboard — flash each half independently. Per half:
+
+1. Plug in **only** the half being flashed (unplug the other).
+2. Enter DFU/bootloader mode, either:
+   - **Reset button** on the back of the PCB (hold ~1s), or
+   - **Bootmagic**: plug in while holding a key —
+     - Left half: `Esc` (first key right of the encoder)
+     - Right half: `PrtSc` (first key left of the encoder)
+3. Run:
+
+       make haverworks/theseus75:goten:flash
+
+4. Repeat for the other half.
+
+**Heads-up:** dfu-util prints `Error during download get_status` and make exits non-zero *even on successful flashes* — the device reboots out of DFU before sending its final reply. If `Download done.` and `File downloaded successfully` appear just above the error, the firmware landed.
+
+**Prerequisite:** `qmk` CLI on `$PATH`. On Arch: `sudo pacman -S qmk` (pulls in `arm-none-eabi-gcc`, `dfu-util`, etc. as deps). Then point qmk at this repo:
+
+    qmk config user.qmk_home=$(pwd)
 
 # Generate JSON
 
