@@ -16,11 +16,11 @@ Standard ANSI, with these deviations from the stock `default`:
 | F-row | F1 | Calculator |
 | F-row | F2 | Media Select |
 | `1` | — | RGB toggle (`RM_TOGG`) |
-| `W` / `A` | — | Brightness up / down (`RM_VALU` / `RM_VALD`) |
-| `E` / `S` | — | Saturation up / down |
-| `R` / `D` | — | Hue up / down |
-| `T` / `F` | — | Cycle mode forward / back |
-| `Y` / `G` | — | Speed up / down |
+| `Q` / `A` | — | Brightness up / down (`RM_VALU` / `RM_VALD`) |
+| `W` / `S` | — | Saturation up / down |
+| `E` / `D` | — | Hue up / down |
+| `R` / `F` | — | Cycle mode forward / back |
+| `T` / `G` | — | Speed up / down |
 | `\` | — | `QK_BOOT` (reboot into bootloader) |
 | `N` | — | `NK_TOGG` (toggle NKRO) |
 | Arrow `↑` | — | `KC_MSTP` (media stop) |
@@ -28,10 +28,10 @@ Standard ANSI, with these deviations from the stock `default`:
 
 ## Encoder (rotary knob)
 
-| Layer | CCW | CW |
-| --- | --- | --- |
-| 0 | Volume down | Volume up |
-| 1 | Prev RGB mode | Next RGB mode |
+| Layer | CCW | CW | Press |
+| --- | --- | --- | --- |
+| 0 | Volume down | Volume up | Mute |
+| 1 | Prev RGB mode | Next RGB mode | RGB toggle (`RM_TOGG`) |
 
 ## Caps-lock indicator
 
